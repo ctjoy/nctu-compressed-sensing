@@ -2,13 +2,13 @@
 Use linear programming and orthogonal matching pursuit solve bad coins problem.
 
 ## Linear Programming
-Elapsed time is 2337.948377 seconds (around 39 mins).
+Elapsed time is 2260.553186 seconds (around 39 mins).
 <p align="center">
   <img src="linear_programming.png">
 </p>
 
 ## Orthogonal Matching Pursuit
-Elapsed time is 22.306648 seconds.
+Elapsed time is 59.631692 seconds.
 <p align="center">
   <img src="orthogonal_matching_pursuit.png">
 </p>
