@@ -1,13 +1,11 @@
-function p = probability_get_right_x(k, n, N, times)
+function p = linear_programming(k, n, N, times)
+phi = randi([0, 1], n, N);
 correct = 0;
-for i = 1:times
+for m = 1:times
     % init
-    phi = randi([0, 1], n, N);
     position = randi([1, N], 1, k);
     real_x = zeros([N, 1]);
-    for j = 1:k
-        real_x(position(j)) = 1; 
-    end
+    real_x(position) = 1; 
 
     % get b
     b = phi * real_x;
@@ -22,4 +20,5 @@ for i = 1:times
     end
 end
 p = correct / times;
+disp(p);
 end
